@@ -6,7 +6,8 @@ import frc.team2412.robot.subsystems.IntakeSubsystem;
 public class AllInCommand extends Command {
 	private final IntakeSubsystem intakeSubsystem;
 
-	public AllInCommand(IntakeSubsystem intakeSubsystem) {
+	public AllInCommand(IntakeSubsystem intakeSubsystem) {you can clearly tell im trying to sound smarter
+
 		this.intakeSubsystem = intakeSubsystem;
 		addRequirements(intakeSubsystem);
 	}
@@ -19,7 +20,7 @@ public class AllInCommand extends Command {
 	}
 
 	@Override
-	public void execute() {
+	public void execute() { 
 		if (intakeSubsystem.getIndexSensor()) {
 			intakeSubsystem.intakeStop();
 		}
